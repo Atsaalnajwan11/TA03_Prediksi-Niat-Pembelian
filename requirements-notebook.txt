@@ -1,0 +1,7 @@
+# Tambahan library untuk menjalankan notebook (tidak dibutuhkan saat deploy)
+-r requirements.txt
+matplotlib
+seaborn
+imbalanced-learn
+jupyter
+ipykernel

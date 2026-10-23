@@ -1,0 +1,8 @@
+flask
+gunicorn
+pandas
+numpy
+joblib
+# WAJIB: ganti baris di bawah dengan versi yang SAMA seperti saat training.
+# Cek dengan: pip show scikit-learn   (contoh hasil: scikit-learn==1.8.0)
+scikit-learn

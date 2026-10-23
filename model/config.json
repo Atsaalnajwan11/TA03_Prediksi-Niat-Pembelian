@@ -1,0 +1,29 @@
+{
+  "threshold": 0.5,
+  "months": [
+    "Feb",
+    "Mar",
+    "May",
+    "June",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
+  "visitor_types": [
+    "New_Visitor",
+    "Other",
+    "Returning_Visitor"
+  ],
+  "model_name": "Regresi Logistik + SMOTE",
+  "sklearn_version": "1.9.1",
+  "metrics": {
+    "Accuracy": 0.85,
+    "Precision": 0.516,
+    "Recall": 0.683,
+    "F1": 0.588,
+    "AUC": 0.877
+  }
+}
