@@ -390,5 +390,7 @@ def reset_session():
     return jsonify(status="ok", message="Session history cleared.")
 
 
+# Untuk Vercel: app di-export sebagai WSGI handler
+# Untuk lokal: jalankan dengan `python app.py`
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
