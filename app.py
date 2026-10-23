@@ -16,6 +16,7 @@ ke SESSION_HISTORY. Confusion matrix & ROC curve dihitung ULANG dari gabungan
 (test set asli + history sesi) dan ditampilkan berdampingan dengan metrik asli.
 """
 import json
+import os
 import threading
 from pathlib import Path
 
@@ -390,7 +391,7 @@ def reset_session():
     return jsonify(status="ok", message="Session history cleared.")
 
 
-# Untuk Vercel: app di-export sebagai WSGI handler
+# Untuk Vercel: app di-export sebagai WSGI handler (otomatis terdeteksi)
 # Untuk lokal: jalankan dengan `python app.py`
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(debug=True, port=int(os.environ.get("PORT", 5000)))
